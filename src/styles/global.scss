@@ -1,0 +1,68 @@
+html[data-theme="linux"] {
+  --bodyColor: linear-gradient(45deg, #390c78 10%, #f57453 100%);
+  --toolBarColor: linear-gradient(#504b45 0%, #3c3b37 100%);
+  --backgroundColor: #2c0d23;
+  --promptUserColor: #87d441;
+  --textColor: white;
+  --cdDirectoryColor: #00b3ff;
+}
+
+html[data-theme="matrix"] {
+  --bodyColor: #000000;
+  --toolBarColor: #1a1a1a;
+  --backgroundColor: #000000;
+  --promptUserColor: #00ff41;
+  --textColor: #00ff41;
+  --cdDirectoryColor: #008f11;
+}
+
+html[data-theme="dracula"] {
+  --bodyColor: #282a36;
+  --toolBarColor: #44475a;
+  --backgroundColor: #282a36;
+  --promptUserColor: #50fa7b;
+  --textColor: #f8f8f2;
+  --cdDirectoryColor: #bd93f9;
+}
+
+html[data-theme="ubuntu"] {
+  --bodyColor: #300a24;
+  --toolBarColor: #3c3b37;
+  --backgroundColor: #300a24;
+  --promptUserColor: #87d441;
+  --textColor: white;
+  --cdDirectoryColor: #e95420;
+}
+
+html[data-theme="light"] {
+  --bodyColor: #f0f0f0;
+  --toolBarColor: #e0e0e0;
+  --backgroundColor: #ffffff;
+  --promptUserColor: #388e3c;
+  --textColor: #212121;
+  --cdDirectoryColor: #1976d2;
+}
+
+.faj-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  max-width: 100%;
+}
+
+.mt-5 {
+  margin-top: 5px !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}

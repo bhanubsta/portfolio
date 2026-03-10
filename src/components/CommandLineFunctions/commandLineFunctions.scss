@@ -1,0 +1,249 @@
+.Function_container {
+  p {
+    white-space: pre-wrap;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 2px 0px;
+      list-style-position: inside;
+    }
+  }
+}
+
+.Project_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .faj-b-project {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    p {
+      width: 50%;
+    }
+
+    a {
+      color: var(--cdDirectoryColor);
+    }
+
+    span {
+      color: var(--cdDirectoryColor);
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.Socials_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .faj-b-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+
+    a {
+      color: var(--cdDirectoryColor);
+    }
+
+    span {
+      color: var(--cdDirectoryColor);
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.Neofetch_container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  font-family: monospace;
+
+  .Neofetch_ascii {
+    color: var(--cdDirectoryColor);
+    white-space: pre;
+    line-height: 1.3;
+    font-size: 13px;
+  }
+
+  .Neofetch_info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .Neofetch_title {
+      color: var(--cdDirectoryColor);
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .Neofetch_divider {
+      color: var(--cdDirectoryColor);
+      margin-bottom: 4px;
+    }
+
+    .Neofetch_row {
+      display: flex;
+      gap: 8px;
+
+      .Neofetch_key {
+        color: var(--cdDirectoryColor);
+        font-weight: bold;
+        min-width: 90px;
+      }
+
+      .Neofetch_value {
+        color: white;
+      }
+    }
+
+    .Neofetch_colors {
+      display: flex;
+      gap: 6px;
+      margin-top: 8px;
+
+      span {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+.Help_list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+
+  .Help_item {
+    display: flex;
+    gap: 30px;
+
+    .Help_command {
+      color: var(--cdDirectoryColor);
+      min-width: 120px;
+      display: inline-block;
+    }
+
+  }
+}
+
+.MessageEditor {
+  margin-top: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  font-family: monospace;
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+
+  &_Header {
+    color: var(--promptUserColor);
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  &_Content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &_Row {
+    display: flex;
+    gap: 10px;
+
+    .label {
+      color: var(--cdDirectoryColor);
+      min-width: 80px;
+    }
+
+    .value {
+      color: white;
+      outline: none;
+      flex: 1;
+      white-space: pre-wrap;
+      word-break: break-all;
+
+      &.active {
+        background: rgba(255, 255, 255, 0.05);
+      }
+    }
+  }
+
+  &_Footer {
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 5px;
+    color: #888;
+    font-size: 12px;
+  }
+
+  &_CommandLine {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    right: 10px;
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+    .cursor {
+      width: 8px;
+      height: 16px;
+      background: var(--promptUserColor);
+      animation: blink 1s infinite;
+    }
+  }
+
+  &_Feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    &.success { color: #87d441; }
+    &.error { color: #f25d2b; }
+  }
+}
+
+.cursor_inline {
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background: white;
+  vertical-align: middle;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
